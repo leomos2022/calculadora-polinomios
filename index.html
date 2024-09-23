@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Polinomios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Polinomios</h2>
+        <div class="input-group">
+            <label for="coef_a">a (x<sup>3</sup>):</label>
+            <input type="text" id="coef_a" placeholder="Ingrese coeficiente de x³">
+        </div>
+        <div class="input-group">
+            <label for="coef_b">b (x<sup>2</sup>):</label>
+            <input type="text" id="coef_b" placeholder="Ingrese coeficiente de x²">
+        </div>
+        <div class="input-group">
+            <label for="coef_c">c (x):</label>
+            <input type="text" id="coef_c" placeholder="Ingrese coeficiente de x">
+        </div>
+        <div class="input-group">
+            <label for="coef_d">d (constante):</label>
+            <input type="text" id="coef_d" placeholder="Ingrese coeficiente constante">
+        </div>
+        <div class="input-group">
+            <label for="lim_inf">Límite inferior:</label>
+            <input type="text" id="lim_inf" placeholder="Ingrese el límite inferior">
+        </div>
+        <div class="input-group">
+            <label for="lim_sup">Límite superior:</label>
+            <input type="text" id="lim_sup" placeholder="Ingrese el límite superior">
+        </div>
+        <button onclick="buscarRaices()">Buscar Raíces</button>
+        <button onclick="buscarMaxMin()">Buscar Máximo/Mínimo</button>
+        
+        <div id="resultados">
+            <h3>Resultados:</h3>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
